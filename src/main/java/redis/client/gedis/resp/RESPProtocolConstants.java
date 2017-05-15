@@ -1,4 +1,4 @@
-package redis.client.gedis;
+package redis.client.gedis.resp;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -13,12 +13,13 @@ public class RESPProtocolConstants {
 
     public static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
 
-    public static final byte DOLLAR_BYTE = '$';
-    public static final byte ASTERISK_BYTE = '*';
-    public static final byte PLUS_BYTE = '+';
-    public static final byte MINUS_BYTE = '-';
-    public static final byte COLON_BYTE = ':';
+    public static final char DOLLAR_BYTE = '$';
+    public static final char ASTERISK_BYTE = '*';
+    public static final char PLUS_BYTE = '+';
+    public static final char MINUS_BYTE = '-';
+    public static final char COLON_BYTE = ':';
 
-    private final byte[] clrf= new byte[] {'\r','\n'};
-    public static final byte[] ASTERISK_BYTE_CLRF = {'*','\r','\n'};
+    public static final String CLRF = "\r\n";
+    public static final String NULL_RESPONSE = "$-1\r\n";
+
 }

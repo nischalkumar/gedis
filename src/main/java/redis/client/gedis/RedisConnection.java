@@ -1,6 +1,8 @@
 package redis.client.gedis;
 
 import redis.client.gedis.exception.GedisConnectionException;
+import redis.client.gedis.resp.RESPProtocalHandler;
+import redis.client.gedis.resp.RESPProtocolConstants;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -57,7 +59,12 @@ public class RedisConnection implements Closeable {
         try {
             protocalHandler.sendCommand(outputStream, command.name(), args);
         } catch (IOException e) {
-            String error = protocalHandler.readErrorLineIfPossible(inputStream);
+            String error = null;
+            try {
+                error = protocalHandler.readReply(inputStream);
+            } catch (IOException e1) {
+                //eat the exception as this is error
+            }
             if(error!=null && error.charAt(0)=='-') {
                 throw new GedisConnectionException(error, e);
             }
@@ -68,32 +75,20 @@ public class RedisConnection implements Closeable {
         try {
             return protocalHandler.readReply(inputStream);
         } catch (IOException e) {
-            String error = protocalHandler.readErrorLineIfPossible(inputStream);
-            if(error!=null && error.charAt(0)=='-') {
-                throw new GedisConnectionException(error, e);
-            }
+                throw new GedisConnectionException("IOException while reading response", e);
         }
-        return null;
     }
 
     public void connect() {
         if (!isConnected()) {
             try {
                 socket = new Socket();
-                // ->@wjw_add
                 socket.setReuseAddress(true);
-                socket.setKeepAlive(true); // Will monitor the TCP connection is
-                // valid
-                socket.setTcpNoDelay(true); // Socket buffer Whetherclosed, to
-                // ensure timely delivery of data
-                socket.setSoLinger(true, 0); // Control calls close () method,
-                // the underlying socket is closed
-                // immediately
-                // <-@wjw_add
-
+                socket.setKeepAlive(true);
+                socket.setTcpNoDelay(true);
+                socket.setSoLinger(true, 0);
                 socket.connect(new InetSocketAddress(host, port), connectionTimeout);
                 socket.setSoTimeout(connectionTimeout);
-
 
                 outputStream = socket.getOutputStream();
                 inputStream = socket.getInputStream();
