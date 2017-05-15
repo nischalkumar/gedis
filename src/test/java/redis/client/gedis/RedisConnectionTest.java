@@ -1,6 +1,7 @@
 package redis.client.gedis;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,7 +33,7 @@ public class RedisConnectionTest {
 //        String setCommand = redisConnection.processReply();
         redisConnection.sendCommand(RedisCommand.GET,"hari_om");
         String getCommand = redisConnection.processReply();
-        System.out.println(getCommand);
+        Assert.assertEquals("lalalal", getCommand);
     }
 
     @Test
@@ -40,7 +41,7 @@ public class RedisConnectionTest {
 //        String setCommand = redisConnection.processReply();
         redisConnection.sendCommand(RedisCommand.GET,"fooAAAAA");
         String getCommand = redisConnection.processReply();
-        System.out.println(getCommand);
+        Assert.assertNull(getCommand);
     }
 
 }
