@@ -33,7 +33,7 @@ public class RedisConnectionTest {
 //        String setCommand = redisConnection.processReply();
         redisConnection.sendCommand(RedisCommand.GET,"hari_om");
         String getCommand = redisConnection.processReply();
-        Assert.assertEquals("lalalal", getCommand);
+        Assert.assertEquals("+OK\r\n$7\r\nlalalal\r\n", getCommand);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class RedisConnectionTest {
 //        String setCommand = redisConnection.processReply();
         redisConnection.sendCommand(RedisCommand.GET,"fooAAAAA");
         String getCommand = redisConnection.processReply();
-        Assert.assertNull(getCommand);
+        Assert.assertEquals("$-1\n",getCommand);
     }
 
 }

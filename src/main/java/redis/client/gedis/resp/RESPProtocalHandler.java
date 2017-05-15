@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import static redis.client.gedis.resp.RESPProtocolConstants.ASTERISK_BYTE;
 import static redis.client.gedis.resp.RESPProtocolConstants.CLRF;
 import static redis.client.gedis.resp.RESPProtocolConstants.DOLLAR_BYTE;
 
@@ -26,12 +27,11 @@ public class RESPProtocalHandler {
     }
 
     private void writeArrays(OutputStream outputStream, int length) throws IOException {
-        outputStream.write(RESPProtocolConstants.ASTERISK_BYTE);
-        IOUtils.write(length+CLRF, outputStream, RESPProtocolConstants.DEFAULT_CHARSET);
+        IOUtils.write(ASTERISK_BYTE+""+length+CLRF, outputStream, RESPProtocolConstants.DEFAULT_CHARSET);
     }
 
     private void writeString(OutputStream outputSteam, String data) throws IOException {
-        String var = DOLLAR_BYTE + data.length() + CLRF + data + CLRF;
+        String var = DOLLAR_BYTE +""+ data.length() + CLRF + data + CLRF;
         IOUtils.write(var, outputSteam, RESPProtocolConstants.DEFAULT_CHARSET);
     }
 
