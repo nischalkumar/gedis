@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gedis.iml" filepath="$PROJECT_DIR$/.idea/modules/gedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gedis_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gedis_main.iml" group="gedis" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gedis_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gedis_test.iml" group="gedis" />
+    </modules>
+  </component>
+</project>
