@@ -22,6 +22,7 @@ public class RespFormatter {
     }
 
     private String parseSimpleString(String resultString) {
-        return resultString.substring(resultString.lastIndexOf('\n', resultString.length() - 2) + 1, resultString.length() - 2);
+        int startIndex = resultString.indexOf('\n', OK_RESPONSE.length());
+        return resultString.substring(startIndex+1, resultString.length() - 2);
     }
 }
