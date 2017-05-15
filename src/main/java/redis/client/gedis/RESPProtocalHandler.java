@@ -37,7 +37,7 @@ public class RESPProtocalHandler {
 
     public String readErrorLineIfPossible(InputStream is){
         try {
-            return IOUtils.toString(is, DEFAULT_CHARSET);
+            return getString(new BufferedInputStream(is));
         } catch (IOException e) {
             //eat silently error msg
             return null;
