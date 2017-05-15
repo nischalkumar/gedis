@@ -2,6 +2,8 @@ package redis.client.gedis;
 
 import redis.client.gedis.resp.RespFormatter;
 
+import java.io.IOException;
+
 /**
  * Created by nischal.k on 16/05/17.
  */
@@ -31,5 +33,14 @@ public class Client extends RedisConnection implements Command{
     public String get(String key) {
         sendCommand(RedisCommand.GET, key);
         return respFormatter.format(processReply());
+    }
+
+    @Override
+    public void close() {
+        try {
+            super.close();
+        } catch (IOException e) {
+            //eat exception as closing
+        }
     }
 }
