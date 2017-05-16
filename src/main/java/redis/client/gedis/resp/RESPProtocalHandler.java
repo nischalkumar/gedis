@@ -42,6 +42,7 @@ public class RESPProtocalHandler {
         byte[] contents = new byte[BUFFER_SIZE];
         String strFileContents = "";
         while(in.available()==0) {
+            //wait till input is available
         }
         while (in.available() > 0) {
             strFileContents += new String(contents, 0, in.read(contents));

@@ -30,7 +30,7 @@ public class Client extends RedisConnection implements Command{
     }
 
     @Override
-    public String get(String key) {
+    public synchronized String get(String key) {
         sendCommand(RedisCommand.GET, key);
         return respFormatter.format(processReply());
     }
