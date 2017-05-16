@@ -22,5 +22,6 @@ public class RESPProtocolConstants {
     public static final String CLRF = "\r\n";
     public static final String NULL_RESPONSE = "$-1\r\n";
     public static final String OK_RESPONSE = "+OK\r\n";
+    public static final String WRONG_TYPE=":0\r\n-";
 
 }

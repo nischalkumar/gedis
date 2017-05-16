@@ -1,8 +1,8 @@
 package redis.client.gedis.resp;
 
-import static redis.client.gedis.resp.RESPProtocolConstants.DOLLAR_BYTE;
-import static redis.client.gedis.resp.RESPProtocolConstants.NULL_RESPONSE;
-import static redis.client.gedis.resp.RESPProtocolConstants.OK_RESPONSE;
+import redis.client.gedis.exception.GedisWrongTypeException;
+
+import static redis.client.gedis.resp.RESPProtocolConstants.*;
 
 /**
  * Created by nischal.k on 16/05/17.
@@ -21,7 +21,16 @@ public class RespFormatter {
         if(request.startsWith(OK_RESPONSE)) {
             return parseSimpleString(request);
         }
+        if(request.startsWith(WRONG_TYPE)) {
+            String errorMsg = parseErrorMsg(request);
+           throw new GedisWrongTypeException(errorMsg);
+        }
         throw new IllegalArgumentException(request+ " is illegal");
+    }
+
+    private String parseErrorMsg(String request) {
+        int startIndex = request.indexOf("-");
+        return request.substring(startIndex+1, request.length()-2);
     }
 
     private String parseSimpleString(String resultString) {

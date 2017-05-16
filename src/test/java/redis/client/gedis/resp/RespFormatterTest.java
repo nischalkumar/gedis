@@ -3,6 +3,7 @@ package redis.client.gedis.resp;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import redis.client.gedis.exception.GedisWrongTypeException;
 
 /**
  * Created by nischal.k on 16/05/17.
@@ -46,5 +47,12 @@ public class RespFormatterTest {
     @Test(expected = IllegalArgumentException.class)
     public void formatIllegalString() {
         respFormatter.format("foo");
+    }
+
+    @Test(expected = GedisWrongTypeException.class)
+    public void wrongTypeErrorString() {
+        String wrongTypeString = ":0\r\n-WRONGTYPE Operation against a key holding the wrong kind of value\r\n";
+        respFormatter.format(wrongTypeString);
+
     }
 }

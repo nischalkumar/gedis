@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import redis.client.gedis.exception.GedisWrongTypeException;
 
 /**
  * Created by nischal.k on 16/05/17.
@@ -218,5 +219,11 @@ public class ClientTest {
         client.set("large", largeString);
         String response = client.get("large");
         Assert.assertEquals(largeString, response);
+    }
+
+    @Test(expected = GedisWrongTypeException.class)
+    public void setCommand() {
+        client.sendCommand(RedisCommand.SADD, "myset", "HELLO");
+        client.get("myset");
     }
 }

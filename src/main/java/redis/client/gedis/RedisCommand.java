@@ -5,5 +5,6 @@ package redis.client.gedis;
  */
 public enum RedisCommand {
     GET,
-    SET
+    SET,
+    SADD
 }
