@@ -9,7 +9,7 @@ import org.junit.Test;
  * Created by nischal.k on 16/05/17.
  */
 public class ClientTest {
-    Client client;
+    private Client client;
 
     @Before
     public void before() {

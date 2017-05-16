@@ -7,9 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import static redis.client.gedis.resp.RESPProtocolConstants.ASTERISK_BYTE;
-import static redis.client.gedis.resp.RESPProtocolConstants.CLRF;
-import static redis.client.gedis.resp.RESPProtocolConstants.DOLLAR_BYTE;
+import static redis.client.gedis.resp.RESPProtocolConstants.*;
 
 /**
  * Created by nischal.k on 15/05/17.
@@ -26,6 +24,11 @@ public class RESPProtocalHandler {
         }
     }
 
+    public String readReply(InputStream inputStream) throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(inputStream);
+        return getString(bis);
+    }
+
     private void writeArrays(OutputStream outputStream, int length) throws IOException {
         IOUtils.write(ASTERISK_BYTE+""+length+CLRF, outputStream, RESPProtocolConstants.DEFAULT_CHARSET);
     }
@@ -33,16 +36,6 @@ public class RESPProtocalHandler {
     private void writeString(OutputStream outputSteam, String data) throws IOException {
         String var = DOLLAR_BYTE +""+ data.length() + CLRF + data + CLRF;
         IOUtils.write(var, outputSteam, RESPProtocolConstants.DEFAULT_CHARSET);
-    }
-
-    public String readReply(InputStream inputStream) throws IOException {
-        BufferedInputStream bis = new BufferedInputStream(inputStream);
-        return getString(bis);
-    }
-
-
-    private String parseSimpleString(String resultString) {
-        return resultString.substring(resultString.lastIndexOf('\n', resultString.length() - 2) + 1, resultString.length() - 2);
     }
 
     private String getString(BufferedInputStream in) throws IOException {

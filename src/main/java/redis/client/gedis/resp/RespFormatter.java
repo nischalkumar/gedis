@@ -12,8 +12,11 @@ public class RespFormatter {
         if(NULL_RESPONSE.equals(request)) {
             return null;
         }
+        if(OK_RESPONSE.equals(request)) {
+            return new StringBuilder().toString();
+        }
         if(request.charAt(0)==DOLLAR_BYTE){
-            return parseSimpleString(request);
+            return parseBulkString(request);
         }
         if(request.startsWith(OK_RESPONSE)) {
             return parseSimpleString(request);
@@ -24,5 +27,10 @@ public class RespFormatter {
     private String parseSimpleString(String resultString) {
         int startIndex = resultString.indexOf('\n', OK_RESPONSE.length());
         return resultString.substring(startIndex+1, resultString.length() - 2);
+    }
+
+    private String parseBulkString(String resultString){
+        int startIndex = resultString.indexOf('\n');
+        return resultString.substring(startIndex+1, resultString.length()-2);
     }
 }

@@ -38,23 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RedisConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/RedisConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RespFormatter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RespFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
+            <state relative-caret-position="138">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,11 +50,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisConnectionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RESPProtocolConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocolConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RespFormatterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/redis/client/gedis/resp/RespFormatterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisConnectionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/redis/client/gedis/RedisConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#503#504#0" expanded="true" />
@@ -76,22 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RESPProtocolConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocolConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
+            <state relative-caret-position="123">
               <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -104,19 +106,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GedisConnectionException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/exception/GedisConnectionException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/redis/client/gedis/ClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            <state relative-caret-position="75">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,23 +147,10 @@
       <file leaf-file-name="RESPProtocalHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocalHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BufferedInputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/io/BufferedInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
-              <folding>
-                <element signature="e#5951#5952#0" expanded="true" />
-                <element signature="e#5996#5997#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -466,12 +465,13 @@
         <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/Client.kt" />
         <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/RedisConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocalHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocolConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RespFormatter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/redis/client/gedis/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/redis/client/gedis/RedisConnectionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocalHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/redis/client/gedis/ClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RespFormatter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/redis/client/gedis/resp/RespFormatterTest.java" />
       </list>
     </option>
   </component>
@@ -579,6 +579,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
@@ -617,7 +647,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
+              <option name="myItemId" value="resp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,6 +669,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="redis.client.gedis.resp" />
       <recent name="redis.client.gedis" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -646,8 +677,8 @@
       <recent name="groovy.util.GroovyTestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RedisConnectionTest">
-    <configuration default="false" name="ClientTest.setEmptyString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ClientTest">
+    <configuration default="false" name="ClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="redis.client.gedis.*" />
@@ -659,7 +690,33 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="redis.client.gedis" />
       <option name="MAIN_CLASS_NAME" value="redis.client.gedis.ClientTest" />
-      <option name="METHOD_NAME" value="setEmptyString" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClientTest.set" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="redis.client.gedis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="gedis_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="redis.client.gedis" />
+      <option name="MAIN_CLASS_NAME" value="redis.client.gedis.ClientTest" />
+      <option name="METHOD_NAME" value="set" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -673,7 +730,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RedisConnectionTest.checkCloseable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ClientTest.getMissingKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="redis.client.gedis.*" />
@@ -684,8 +741,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="redis.client.gedis" />
-      <option name="MAIN_CLASS_NAME" value="redis.client.gedis.RedisConnectionTest" />
-      <option name="METHOD_NAME" value="checkCloseable" />
+      <option name="MAIN_CLASS_NAME" value="redis.client.gedis.ClientTest" />
+      <option name="METHOD_NAME" value="getMissingKey" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -699,7 +756,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RedisConnectionTest.invalidHost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ClientTest.setStringWithMultipleCLRF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="redis.client.gedis.*" />
@@ -710,34 +767,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="redis.client.gedis" />
-      <option name="MAIN_CLASS_NAME" value="redis.client.gedis.RedisConnectionTest" />
-      <option name="METHOD_NAME" value="invalidHost" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RedisConnectionTest.invalidPort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="redis.client.gedis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="gedis_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="redis.client.gedis" />
-      <option name="MAIN_CLASS_NAME" value="redis.client.gedis.RedisConnectionTest" />
-      <option name="METHOD_NAME" value="invalidPort" />
+      <option name="MAIN_CLASS_NAME" value="redis.client.gedis.ClientTest" />
+      <option name="METHOD_NAME" value="setStringWithMultipleCLRF" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1236,19 +1267,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ClientTest.setEmptyString" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest.checkCloseable" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest.invalidHost" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest.invalidPort" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ClientTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ClientTest.set" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ClientTest.getMissingKey" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ClientTest.setStringWithMultipleCLRF" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest.invalidPort" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest.invalidHost" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest.checkCloseable" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ClientTest.setEmptyString" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClientTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RedisConnectionTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ClientTest.setStringWithMultipleCLRF" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ClientTest.getMissingKey" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ClientTest.set" />
       </list>
     </recent_temporary>
   </component>
@@ -1271,44 +1302,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494858659876</updated>
-      <workItem from="1494858685246" duration="14351000" />
+      <workItem from="1494858685246" duration="15504000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClientTest - 2017.05.16 at 05h 23m 18s.xml">
+    <history-entry file="ClientTest - 2017.05.16 at 05h 52m 11s.xml">
       <configuration name="ClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2017.05.16 at 05h 24m 06s.xml">
+    <history-entry file="ClientTest - 2017.05.16 at 05h 56m 00s.xml">
       <configuration name="ClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest_setEmptyString - 2017.05.16 at 05h 30m 05s.xml">
-      <configuration name="ClientTest.setEmptyString" configurationId="JUnit" />
+    <history-entry file="ClientTest - 2017.05.16 at 05h 56m 09s.xml">
+      <configuration name="ClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest_setLargeSTring - 2017.05.16 at 05h 26m 58s.xml">
-      <configuration name="ClientTest.setLargeSTring" configurationId="JUnit" />
+    <history-entry file="ClientTest - 2017.05.16 at 05h 56m 16s.xml">
+      <configuration name="ClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest_setLargeSTring - 2017.05.16 at 05h 27m 16s.xml">
-      <configuration name="ClientTest.setLargeSTring" configurationId="JUnit" />
+    <history-entry file="ClientTest - 2017.05.16 at 05h 56m 21s.xml">
+      <configuration name="ClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisConnectionTest_checkCloseable - 2017.05.16 at 05h 33m 51s.xml">
-      <configuration name="RedisConnectionTest.checkCloseable" configurationId="JUnit" />
+    <history-entry file="ClientTest_getMissingKey - 2017.05.16 at 05h 55m 12s.xml">
+      <configuration name="ClientTest.getMissingKey" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisConnectionTest_invalidHost - 2017.05.16 at 05h 34m 45s.xml">
-      <configuration name="RedisConnectionTest.invalidHost" configurationId="JUnit" />
+    <history-entry file="ClientTest_set - 2017.05.16 at 05h 54m 46s.xml">
+      <configuration name="ClientTest.set" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisConnectionTest_invalidHost - 2017.05.16 at 05h 35m 15s.xml">
-      <configuration name="RedisConnectionTest.invalidHost" configurationId="JUnit" />
+    <history-entry file="ClientTest_setStringWithMultipleCLRF - 2017.05.16 at 05h 55m 24s.xml">
+      <configuration name="ClientTest.setStringWithMultipleCLRF" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisConnectionTest_invalidHost - 2017.05.16 at 05h 35m 39s.xml">
-      <configuration name="RedisConnectionTest.invalidHost" configurationId="JUnit" />
+    <history-entry file="RedisConnectionTest - 2017.05.16 at 05h 55m 47s.xml">
+      <configuration name="RedisConnectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisConnectionTest_invalidPort - 2017.05.16 at 05h 36m 40s.xml">
-      <configuration name="RedisConnectionTest.invalidPort" configurationId="JUnit" />
+    <history-entry file="RespFormatterTest_formatSimpleStrings - 2017.05.16 at 05h 51m 53s.xml">
+      <configuration name="RespFormatterTest.formatSimpleStrings" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14351000" />
+    <option name="totallyTimeSpent" value="15504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1365,19 +1396,25 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/redis/client/gedis/RedisConnectionTest.java</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/src/test/java/redis/client/gedis/ClientTest.java</url>
+          <line>26</line>
           <properties />
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RespFormatter.java</url>
-          <line>25</line>
+          <line>11</line>
           <properties />
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RespFormatter.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1386,21 +1423,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/exception/GedisConnectionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <element signature="e#247#248#0" expanded="false" />
-            <element signature="e#277#278#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#470#471#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1500,6 +1522,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/io/BufferedInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
+          <folding>
+            <element signature="e#5951#5952#0" expanded="true" />
+            <element signature="e#5996#5997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/RedisConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/RedisCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1516,31 +1559,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/io/BufferedInputStream.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/exception/GedisConnectionException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
-          <folding>
-            <element signature="e#5951#5952#0" expanded="true" />
-            <element signature="e#5996#5997#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocolConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocalHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="345">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocalHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/redis/client/gedis/resp/RespFormatterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RESPProtocolConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1549,7 +1601,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
+        <state relative-caret-position="123">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1563,34 +1615,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/resp/RespFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/redis/client/gedis/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/redis/client/gedis/RedisConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        <state relative-caret-position="138">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1599,12 +1625,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/redis/client/gedis/RedisConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#503#504#0" expanded="true" />
             <element signature="e#558#559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/redis/client/gedis/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
           </folding>
         </state>
       </provider>
