@@ -39,7 +39,13 @@ public class ClientTest {
     }
 
     @Test
-    public void setLargeSTring() {
+    public void setEmptyString() {
+        client.set("foo","");
+        Assert.assertEquals("", client.get("foo"));
+    }
+
+    @Test
+    public void setStringWithMultipleCLRF() {
         String largeString= "Redis  Commands Clients Documentation Community Download Modules Support\n" +
                 "Redis Protocol specification\n" +
                 "Redis clients communicate with the Redis server using a protocol called RESP (REdis Serialization Protocol). While the protocol was designed specifically for Redis, it can be used for other client-server software projects.\n" +
