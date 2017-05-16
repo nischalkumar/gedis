@@ -24,9 +24,9 @@ public class RESPProtocalHandler {
         }
     }
 
-    public String readReply(InputStream inputStream) throws IOException {
+    public String readReply(InputStream inputStream, int connectionTimeout) throws IOException {
         BufferedInputStream bis = new BufferedInputStream(inputStream);
-        return getString(bis);
+        return readInputStream(bis, connectionTimeout);
     }
 
     private void writeArrays(OutputStream outputStream, int length) throws IOException {
@@ -38,11 +38,11 @@ public class RESPProtocalHandler {
         IOUtils.write(var, outputSteam, RESPProtocolConstants.DEFAULT_CHARSET);
     }
 
-    private String getString(BufferedInputStream in) throws IOException {
+    private String readInputStream(BufferedInputStream in, int connectionTimeout) throws IOException {
         byte[] contents = new byte[BUFFER_SIZE];
         String strFileContents = "";
 
-        long timeoutExpiredMs = System.currentTimeMillis() + DEFAULT_TIMEOUT;
+        long timeoutExpiredMs = System.currentTimeMillis() + connectionTimeout;
         while(in.available()==0) {
             //wait till input is available
             if (System.currentTimeMillis() >= timeoutExpiredMs) {

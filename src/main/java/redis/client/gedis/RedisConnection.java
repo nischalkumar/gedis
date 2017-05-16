@@ -61,7 +61,7 @@ public class RedisConnection implements Closeable {
         } catch (IOException e) {
             String error = null;
             try {
-                error = protocalHandler.readReply(inputStream);
+                error = protocalHandler.readReply(inputStream, connectionTimeout);
             } catch (IOException e1) {
                 //eat the exception as this is error
             }
@@ -73,7 +73,7 @@ public class RedisConnection implements Closeable {
 
     public String processReply() {
         try {
-            return protocalHandler.readReply(inputStream);
+            return protocalHandler.readReply(inputStream, connectionTimeout);
         } catch (IOException e) {
                 throw new GedisConnectionException("IOException while reading response", e);
         }
