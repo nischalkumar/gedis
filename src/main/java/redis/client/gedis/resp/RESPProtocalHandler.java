@@ -41,9 +41,16 @@ public class RESPProtocalHandler {
     private String getString(BufferedInputStream in) throws IOException {
         byte[] contents = new byte[BUFFER_SIZE];
         String strFileContents = "";
+
+        long timeoutExpiredMs = System.currentTimeMillis() + DEFAULT_TIMEOUT;
         while(in.available()==0) {
             //wait till input is available
+            if (System.currentTimeMillis() >= timeoutExpiredMs) {
+                // we timed out
+                throw new IOException("could not input fron redis");
+            }
         }
+
         while (in.available() > 0) {
             strFileContents += new String(contents, 0, in.read(contents));
         }
