@@ -41,6 +41,8 @@ public class RESPProtocalHandler {
     private String getString(BufferedInputStream in) throws IOException {
         byte[] contents = new byte[BUFFER_SIZE];
         String strFileContents = "";
+        while(in.available()==0) {
+        }
         while (in.available() > 0) {
             strFileContents += new String(contents, 0, in.read(contents));
         }
