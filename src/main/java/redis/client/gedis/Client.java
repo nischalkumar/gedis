@@ -1,6 +1,6 @@
 package redis.client.gedis;
 
-import redis.client.gedis.resp.RespFormatter;
+import redis.client.gedis.resp.FormatterFactory;
 
 import java.io.IOException;
 
@@ -8,20 +8,20 @@ import java.io.IOException;
  * Created by nischal.k on 16/05/17.
  */
 public class Client extends RedisConnection implements Command{
-    private final RespFormatter respFormatter;
+    private final FormatterFactory respFormatter;
 
     public Client() {
-        respFormatter = new RespFormatter();
+        respFormatter = new FormatterFactory();
     }
 
     public Client(String host, int port) {
         super(host, port);
-        respFormatter = new RespFormatter();
+        respFormatter = new FormatterFactory();
     }
 
     public Client(String host, int port, int connectionTimeout) {
         super(host, port, connectionTimeout);
-        respFormatter = new RespFormatter();
+        respFormatter = new FormatterFactory();
     }
 
     @Override
@@ -32,7 +32,7 @@ public class Client extends RedisConnection implements Command{
     @Override
     public synchronized String get(String key) {
         sendCommand(RedisCommand.GET, key);
-        return respFormatter.format(processReply());
+        return (String)respFormatter.format(processReply());
     }
 
     @Override

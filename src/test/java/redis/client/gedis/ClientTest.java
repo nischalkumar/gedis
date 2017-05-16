@@ -28,6 +28,7 @@ public class ClientTest {
         Assert.assertEquals("bar", client.get("foo"));
     }
 
+
     @Test
     public void getMissingKey() throws Exception {
         String result = client.get("hari_om_hari_om");
