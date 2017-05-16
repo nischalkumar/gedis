@@ -40,11 +40,9 @@ public class RESPProtocalHandler {
 
     private String getString(BufferedInputStream in) throws IOException {
         byte[] contents = new byte[BUFFER_SIZE];
-
-        int bytesRead = 0;
         String strFileContents = "";
-        while (in.available() > 0 && (bytesRead = in.read(contents)) != -1) {
-            strFileContents += new String(contents, 0, bytesRead);
+        while (in.available() > 0) {
+            strFileContents += new String(contents, 0, in.read(contents));
         }
         return strFileContents;
     }
