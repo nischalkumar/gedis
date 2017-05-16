@@ -79,7 +79,7 @@ public class RedisConnection implements Closeable {
         }
     }
 
-    public void connect() {
+    public synchronized void connect() {
         if (!isConnected()) {
             try {
                 socket = new Socket();
