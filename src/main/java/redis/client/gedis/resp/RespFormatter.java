@@ -21,7 +21,7 @@ public class RespFormatter {
         if(request.startsWith(OK_RESPONSE)) {
             return parseSimpleString(request);
         }
-        return request;
+        throw new IllegalArgumentException(request+ " is illegal");
     }
 
     private String parseSimpleString(String resultString) {

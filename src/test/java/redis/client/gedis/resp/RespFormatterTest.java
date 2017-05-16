@@ -42,4 +42,9 @@ public class RespFormatterTest {
         String response = respFormatter.format(simpleString);
         Assert.assertEquals("", response);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void formatIllegalString() {
+        respFormatter.format("foo");
+    }
 }

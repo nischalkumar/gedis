@@ -58,4 +58,10 @@ public class RedisConnectionTest {
         RedisConnection redisConnection = new RedisConnection("localhost",3333);
         redisConnection.connect();
     }
+
+    @Test(expected = GedisConnectionException.class)
+    public void verySmallTimeout() {
+        RedisConnection redisConnection = new RedisConnection("localhost",3333, 1);
+        redisConnection.connect();
+    }
 }
