@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
+import redis.client.gedis.exception.GedisConnectionException;
 
 import java.io.IOException;
 
@@ -37,11 +38,24 @@ public class RedisConnectionTest {
     }
 
     @Test
-    public  void testCommandGETNULL() {
-//        String setCommand = redisConnection.processReply();
-        redisConnection.sendCommand(RedisCommand.GET,"fooAAAAA");
-        String getCommand = redisConnection.processReply();
-        Assert.assertEquals("$-1\n",getCommand);
+    public void checkCloseable() {
+        redisConnection.connect();
+        try {
+            redisConnection.close();
+        } catch (IOException e) {
+            Assert.fail();
+        }
     }
 
+    @Test(expected = GedisConnectionException.class)
+    public void invalidHost() {
+        RedisConnection redisConnection = new RedisConnection("aaaaaaaaa",3333);
+        redisConnection.connect();
+    }
+
+    @Test(expected = GedisConnectionException.class)
+    public void invalidPort() {
+        RedisConnection redisConnection = new RedisConnection("localhost",3333);
+        redisConnection.connect();
+    }
 }
