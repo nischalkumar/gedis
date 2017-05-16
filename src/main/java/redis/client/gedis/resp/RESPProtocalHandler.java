@@ -30,11 +30,11 @@ public class RESPProtocalHandler {
     }
 
     private void writeArrays(OutputStream outputStream, int length) throws IOException {
-        IOUtils.write(ASTERISK_BYTE+""+length+CLRF, outputStream, RESPProtocolConstants.DEFAULT_CHARSET);
+        IOUtils.write(ASTERISK +""+length+CLRF, outputStream, RESPProtocolConstants.DEFAULT_CHARSET);
     }
 
     private void writeString(OutputStream outputSteam, String data) throws IOException {
-        String var = DOLLAR_BYTE +""+ data.length() + CLRF + data + CLRF;
+        String var = DOLLAR +""+ data.length() + CLRF + data + CLRF;
         IOUtils.write(var, outputSteam, RESPProtocolConstants.DEFAULT_CHARSET);
     }
 

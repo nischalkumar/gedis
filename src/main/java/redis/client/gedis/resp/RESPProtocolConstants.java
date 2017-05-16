@@ -13,11 +13,11 @@ public class RESPProtocolConstants {
 
     public static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
 
-    public static final char DOLLAR_BYTE = '$';
-    public static final char ASTERISK_BYTE = '*';
-    public static final char PLUS_BYTE = '+';
-    public static final char MINUS_BYTE = '-';
-    public static final char COLON_BYTE = ':';
+    public static final char DOLLAR = '$';
+    public static final char ASTERISK = '*';
+    public static final char PLUS = '+';
+    public static final char MINUS = '-';
+    public static final char COLON = ':';
 
     public static final String CLRF = "\r\n";
     public static final String NULL_RESPONSE = "$-1\r\n";

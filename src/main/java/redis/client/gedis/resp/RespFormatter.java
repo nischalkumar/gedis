@@ -15,7 +15,7 @@ public class RespFormatter {
         if(OK_RESPONSE.equals(request)) {
             return new StringBuilder().toString();
         }
-        if(request.charAt(0)==DOLLAR_BYTE){
+        if(request.charAt(0)== DOLLAR){
             return parseBulkString(request);
         }
         if(request.startsWith(OK_RESPONSE)) {
